@@ -27,7 +27,7 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
    ```
    $ docker run -it --rm \
      -e DISPLAY=$DISPLAY \
-     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
      -v $(pwd)/fastVision:/home/fastVision:rw \
      atreyash/fastvision
    ```
@@ -37,7 +37,7 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
    ```
    $ docker run -it --rm \
      -e DISPLAY=$DISPLAY \
-     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
+     -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
      -v /path/to/fastVision:/home/fastVision:rw \
      atreyash/fastvision
    ```
