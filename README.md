@@ -2,7 +2,7 @@
 
 Docker is a useful means of testing containerized applications. Here, we provide this possibility of testing our `fastVision` application (https://github.com/AtreyaSh/fastVision) within a docker container. Some benefits of this are that one can avoid long, tedious and space-consuming installations into their root folders. A user can then test this application to check if it is of use to them.
 
-The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`, with the useful packages `pdftools`, `magick` and `tesseract`.
+The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`, with useful packages such as `pdftools`, `magick` and `tesseract` pre-built and installed.
 
 ## Docker Implementation for Ubuntu 16.04
 
