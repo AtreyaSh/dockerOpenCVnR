@@ -32,7 +32,7 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
      atreyash/fastvision
    ```
    
-   Alternatively, if your working directory is elsewhere, please indicate the absolute path to the cloned `/fastVision` directory.
+   Alternatively, if your working directory is elsewhere, please indicate the absolute path `/path/to/fastVision` to the cloned `/fastVision` directory.
    
    ```
    $ docker run -it --rm \
