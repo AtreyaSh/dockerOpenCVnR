@@ -22,7 +22,7 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
 
    Note: This will be a long process with ~9 GB of data to be installed.
 
-4. After building the image, we would then need to run our docker image in a container. Since, we require GUI services within the container, we would need to tweak our container as below. Here, we assume your working directory contains both cloned git repositories.
+4. After building the image, we would then need to run our docker image in a container. Since, we require GUI services within the container, we have tweaked our container build to assume the same user ID as your current used ie. `uid=1000` and `gid=1000`.  This allows the container to access local X11 services. Here, we assume your working directory contains both cloned git repositories.
 
    ```
    $ docker run -it --rm \
