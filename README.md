@@ -40,4 +40,4 @@ Docker is a useful means of testing containerized applications. Here, we provide
 
 ROS.org Docker Wiki: http://wiki.ros.org/docker/Tutorials/GUI
 
-http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
+Fabio Rehm's blogpost on GUIs for Docker Containers: http://fabiorehm.com/blog/2014/09/11/running-gui-apps-with-docker/
