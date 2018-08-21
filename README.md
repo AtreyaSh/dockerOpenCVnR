@@ -24,12 +24,15 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
 
 4. After building the image, we would then need to run our docker image in a container. Since, we require GUI services within the container, we would need to tweak our container as below. Here, we assume your working directory contains both cloned git repositories.
 
-   ```$ docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v $(pwd)/fastVision:/home/fastVision:rw  atreyash/fastvision```
+   ```
+   $ docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v $(pwd)/fastVision:/home/fastVision:rw  atreyash/fastvision
+   ```
    
    Alternatively, if your working directory is elsewhere, please indicate the absolute path to the cloned `/fastVision` directory.
    
-   ```$ docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /path/to/fastVision:/home/fastVision:rw 
-   atreyash/fastvision```
+   ```
+   $ docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:rw -v /path/to/fastVision:/home/fastVision:rw atreyash/fastvision
+   ```
 
    This will run the container and mount the existing local `fastVision` directory into the container. The container has read and write permissions for the mounted `/fastVision` directory, meaning you can edit the files within your local machine and these changes will be reflected within the container. Similarly, after processing the image(s) within the container, the reflected changes will appear in your local machine.
    
