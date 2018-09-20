@@ -10,15 +10,21 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
 
 2. We need to install certain `X Server` dependencies on the host system:
 
-   `$ sudo apt-get install xserver-xorg-core xserver-xorg xorg openbox`
+   ```shell
+   $ sudo apt-get install xserver-xorg-core xserver-xorg xorg openbox
+   ```
    
 3. Clone our `fastVision` and `dockerOpenCVnR` repositories.
 
-   `$ git clone https://github.com/AtreyaSh/fastVision && git clone https://github.com/AtreyaSh/dockerOpenCVnR`
+   ```shell
+   $ git clone https://github.com/AtreyaSh/fastVision && git clone https://github.com/AtreyaSh/dockerOpenCVnR
+   ```
 
 3. Navigate to `/dockerOpenCVnR` and build our docker image from source.
 
-   `$ cd dockerOpenCVnR && docker build -t atreyash/fastvision . && cd ..`
+   ```shell
+   $ cd dockerOpenCVnR && docker build -t atreyash/fastvision . && cd ..
+   ```
 
    Note: This will be a long process with ~9 GB of data to be installed.
 
