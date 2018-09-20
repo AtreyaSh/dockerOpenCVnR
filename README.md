@@ -17,7 +17,9 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
 3. Clone our `fastVision` and `dockerOpenCVnR` repositories.
 
    ```shell
-   $ git clone https://github.com/AtreyaSh/fastVision && git clone https://github.com/AtreyaSh/dockerOpenCVnR
+   $ git clone https://github.com/AtreyaSh/fastVision
+   
+   $ git clone https://github.com/AtreyaSh/dockerOpenCVnR
    ```
 
 3. Navigate to `/dockerOpenCVnR` and build our docker image from source.
