@@ -1,6 +1,6 @@
 # dockerOpenCVnR
 
-Docker is a useful means of testing containerized applications. Here, we provide this possibility of testing our `fastVision` application (https://github.com/AtreyaSh/fastVision) within a docker container. Some benefits of this are that one can avoid long, tedious and space-consuming installations into their root folders. A user can then test this application to check if it is of use to them.
+Docker is a useful means of testing containerized applications. Here, we provide this possibility of testing our `fastVision` application (https://github.com/atreyasha/fastVision) within a docker container. Some benefits of this are that one can avoid long, tedious and space-consuming installations into their root folders. A user can then test this application to check if it is of use to them.
 
 The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`, with useful CRAN packages such as `pdftools`, `png`, `magick` and `tesseract` pre-built and installed.
 
@@ -17,9 +17,9 @@ The Docker image proposed here contains installations of `OpenCV 3.3.1` and `R`,
 3. Clone our `fastVision` and `dockerOpenCVnR` repositories.
 
    ```shell
-   $ git clone https://github.com/AtreyaSh/fastVision
+   $ git clone https://github.com/atreyasha/fastVision
    
-   $ git clone https://github.com/AtreyaSh/dockerOpenCVnR
+   $ git clone https://github.com/atreyasha/dockerOpenCVnR
    ```
 
 3. Navigate to `/dockerOpenCVnR` and build our docker image from source.
